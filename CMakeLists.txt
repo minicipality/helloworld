@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
 #if (DEFINED $ENV{TRAVIS_BUILD_NUMBER})
-    project(helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+    project(helloworld_lib VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 #else()
 #    project(helloworld VERSION 0.0.1)
 #endif()
@@ -28,7 +28,7 @@ set_target_properties(test_version PROPERTIES
 )
 
 target_link_libraries(helloworld
-    helloworld_lib
+    helloworld
 )
 
 target_link_libraries(test_version
