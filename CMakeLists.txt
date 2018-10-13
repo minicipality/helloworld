@@ -33,7 +33,7 @@ target_link_libraries(helloworld
 
 target_link_libraries(test_version
     ${Boost_LIBRARIES}
-    helloworld
+    helloworld_lib
 )
 
 install(TARGETS helloworld RUNTIME DESTINATION bin)
