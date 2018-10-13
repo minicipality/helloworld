@@ -28,7 +28,7 @@ set_target_properties(test_version PROPERTIES
 )
 
 target_link_libraries(helloworld
-    helloworld
+    helloworld_lib
 )
 
 target_link_libraries(test_version
